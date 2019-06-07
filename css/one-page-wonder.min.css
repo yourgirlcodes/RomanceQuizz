@@ -1,0 +1,233 @@
+/*!
+ * Start Bootstrap - One Page Wonder v5.0.4 (https://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+
+body {
+  margin: 0;
+}
+
+@media (min-width: 760px) {
+  .container.loveIntro .row {
+    padding-top: 150px;
+  }
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+header.masthead {
+  overflow: hidden;
+  padding-bottom: 7rem;
+  background: linear-gradient(0deg, #ff6a00 0, #ee0979 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  border-radius: 100%;
+  background: linear-gradient(0deg, #ee0979 0, #ff6a00 100%);
+}
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+}
+
+@media (min-width:500px) {
+  header.masthead {
+    padding-top: calc(10rem + 5px);
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:800px) {
+  body h1, h2, h3 {
+    font-size: 2em;
+  }
+  img {
+    display: none;
+  }
+  #section1, #section2, #section3, #section4, #section5, #section6 {
+    top: 0;
+    position: relative;
+  }
+}
+
+.bg-primary {
+  background-color: #ee0979;
+}
+
+.btn-primary {
+  background-color: #ee0979;
+  border-color: #ee0979;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #bd0760;
+  border-color: #bd0760;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 .2rem rgba(238, 9, 121, .5);
+  box-shadow: 0 0 0 .2rem rgba(238, 9, 121, .5);
+}
+
+.btn-secondary {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #c50;
+  border-color: #c50;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 .2rem rgba(255, 106, 0, .5);
+  box-shadow: 0 0 0 .2rem rgba(255, 106, 0, .5);
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+.section3 input[type=text] {
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navbar {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+body .container.loveIntro h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+body .container.loveIntro h1 {
+  font-family: 'Old Standard TT', serif;
+}
+
+body .container.loveExit h1, h2, h3 {
+  font-family: 'Old Standard TT', serif;
+}
+
+#buttonHide {
+  margin: 1em;
+  position: absolute;
+  z-index: 100;
+}
+
+.row {
+  height: 100vh!important;
+}
+
+#section6, #section4, #section3, #section2, #section1 {
+  height: 100vh!important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section0{
+  position: fixed;
+  background-color: rbga(0,0,0,0.7);
+}
+
+#section6{
+  overflow: hidden;
+  padding-bottom: 7rem;
+  background: linear-gradient(0deg, #ff6a00 0, #ee0979 70%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+background-blend-mode: multiply;  
+}
+
+#buttonHide{
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 7vh;
+  width: 7vw;
+  color: red;
+  border-color: red;
+}
+
+#button1{
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  height: 15vh;
+  width: 15vw;
+  color: red;
+  border-color: red;
+
+}

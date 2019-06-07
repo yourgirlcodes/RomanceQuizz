@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Romantic Quiz</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Inconsolata|Old+Standard+TT&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <!-- MY EDITS ARE FOUND HERE, TO OVERRIDE TEMPLATE CSS RULES-->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark navbar-custom" id="section0"> Zoë Cohen: Hopeless romantic. Watches The Lion King and
+    The
+    Notebook too often. Created this quiz to test herself
+  </nav>
+  <header class="masthead text-center text-white" id="pageOne">
+    <div class="masthead-content">
+      <div class="container loveIntro">
+        <h1 class="masthead-heading mb-0">THINK YOU ARE A ROMANTIC ?</h1><br />
+        <h2 class="masthead-subheading mb-0">Take this quiz to find out...</h2>
+      </div>
+    </div>
+    <button id="buttonHide" onclick="hideMe()">Kiss Me.</button>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section id="section1">
+    <div class="container loveIntro">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle"
+              src="http://gifgifmagazine.com/wp-content/uploads/2017/07/poljupci-anime.gif" alt="" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 ">
+          <div class="p-5">
+            <h3 class="display-4">Question 1: </h3>
+            <h2> How often do you wonder <br /> what your future partner will be like? <br /></h2>
+            <p> On a scale of 0 to 10. <br /> 10 being that it is the only thing you think about.)</p>
+            <input type="number" id="imaginationFrequency" min="0" max="10">
+            <button id="buttonHide" onclick="hideMeOne()"> Kiss Me.</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="container loveIntro">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle"
+              src="http://24.media.tumblr.com/48d1a696f1fec2bc4f852742b73ccf13/tumblr_ml0t2hs4gB1rgpyeqo1_400.gif"
+              alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="p-5">
+            <h3 class="display-4">Question 2:</h3>
+            <h2>
+              What is your favourite season? </h2>
+            <p>(You can only select one.)</p>
+            <h3>
+              <input type="radio" name="favSeason" value="5"> &nbsp; Winter <br />
+              <input type="radio" name="favSeason" value="2"> &nbsp; Spring <br />
+              <input type="radio" name="favSeason" value="3"> &nbsp; Autumn/Fall <br />
+              <input type="radio" name="favSeason" value="0"> &nbsp; Summer <br />
+            </h3>
+            <button id="buttonHide" onclick="hideMeTwo()">Kiss Me.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="container loveIntro">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle"
+              src="http://fibcbulk.com/wp-content/uploads/love-heart-free-stock-photos-download-2186-free-stock-photos-for-heart-stils.jpg"
+              alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="p-5">
+            <h3 class="display-4">Question 3:</h3>
+            <h2>
+              Explain your DREAM date: </h2>
+            <p>(Tell us the real truth... in one sentence.)</p>
+            <h3>
+              <input type="text" id="dreamDate" required minlength="1" maxlength="10"
+                placeholder="Dream date goes here!"><br />
+            </h3>
+            <button id="buttonHide" onclick="hideMeThree()">Kiss Me.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4">
+    <div class="container loveIntro">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle"
+              src="https://media1.tenor.com/images/3ebe7dbf434c960176c4d878b0803e0b/tenor.gif?itemid=11710987" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="p-5">
+            <h3 class="display-4">Question 4:</h3>
+            <h2>
+              Which of the following would you NEVER eat on a date? </h2>
+            <p>(You can select more than one.)</p>
+            <h3>
+              <input type="checkbox" name="foodChoice" value="2"> &nbsp; Sushi <br />
+              <input type="checkbox" name="foodChoice" value="1"> &nbsp; Steak <br />
+              <input type="checkbox" name="foodChoice" value="4"> &nbsp; Pasta <br />
+              <input type="checkbox" name="foodChoice" value="3"> &nbsp; Salad <br />
+            </h3>
+            <button id="buttonHide" onclick="hideMeFour()">Kiss Me.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section5">
+    <div class="container loveIntro">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle"
+              src="https://st.depositphotos.com/2171279/4300/i/950/depositphotos_43002179-stock-photo-watercolor-heart.jpg"
+              alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5">
+            <h3 class="display-4">Question 5:<br /></h3>
+            <h2> "The Notebook:" <br /> <br /></h2>
+            <div>
+              <h5>0
+                <input type="range" id="notebookRating" min="0" max="10" step="1">
+                <label for="notebookRating"> &nbsp; 10: OBSESSED</label>
+              </h5>
+            </div>
+            <button id="buttonHide" onclick="hideMeFive()">Kiss Me.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section6">
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container loveExit">
+          <h3 id="printResultHere"> YOU HAVE COMPLETED THE QUIZ! <br><br> All you have to do now,
+            is submit your answers.<br /> <br /> We'll calculate your results and give you the answer you've been
+            waiting for...</h3><br />
+          <h2><button id="button1" onclick="calculationOfResults()">SUBMIT!</button></h2>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/Assignment2.js"></script>
+
+</body>
+
+</html>
